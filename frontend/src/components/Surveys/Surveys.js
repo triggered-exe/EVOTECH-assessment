@@ -11,7 +11,8 @@ const Surveys = () => {
     const [selectedSurvey, setSelectedSurvey] = useState(null);
 
     const getSurveys = () => {
-        axios.get(`http://localhost:8000/api/surveys?page=${currentPage}&limit=10`,{withCredentials: true})
+       const serverUrl = process.env.REACT_APP_SERVER_URL;
+        axios.get(`${serverUrl}/api/surveys?page=${currentPage}&limit=10`,{withCredentials: true})
         .then(res => {
           console.log(res.data)
           setSurveys(res.data.surveys); // Update surveys state with the 'surveys' array from the response
