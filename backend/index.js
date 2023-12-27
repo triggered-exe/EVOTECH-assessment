@@ -13,7 +13,7 @@ const app = express();
 console.log(process.env.FRONTEND_URL);
 
 app.use(cors({
-    origin: [process.env.FRONTEND_URL, "http://localhost:3002", "https://iridescent-khapse-0bddb9.netlify.app"],
+    origin: [process.env.FRONTEND_URL, "http://localhost:3002","http://localhost:3002", "https://iridescent-khapse-0bddb9.netlify.app"],
     credentials: true
   }));
   

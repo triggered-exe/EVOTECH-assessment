@@ -29,7 +29,8 @@ const Login = ({isLoggedIn, setIsLoggedIn}) => {
     try {
         const serverUrl = process.env.REACT_APP_SERVER_URL;
         console.log(serverUrl);
-        const response = await axios.post(`${serverUrl}/api/admin/login`, {
+        axios.defaults.baseURL = 'https://evotech-backend-h8ro.onrender.com';
+        const response = await axios.post(`/api/admin/login`, {
           email: email,
           password: password
         }, { withCredentials: true });

@@ -23,7 +23,8 @@ const SurveyForm = () => {
     e.preventDefault();
     // Handle form submission, e.g., send data to server
     const serverUrl = process.env.REACT_APP_SERVER_URL;
-    axios.post(`${serverUrl}/api/surveys`, formData, {
+    axios.defaults.baseURL = 'https://evotech-backend-h8ro.onrender.com';
+    axios.post(`/api/surveys`, formData, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
         }

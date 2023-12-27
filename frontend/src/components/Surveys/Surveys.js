@@ -12,7 +12,8 @@ const Surveys = () => {
     console.log(process.env.REACT_APP_SERVER_URL);
     const getSurveys = () => {
        const serverUrl = process.env.REACT_APP_SERVER_URL;
-        axios.get(`${serverUrl}/api/surveys?page=${currentPage}&limit=10`,{withCredentials: true})
+       axios.defaults.baseURL = 'https://evotech-backend-h8ro.onrender.com';
+        axios.get(`/api/surveys?page=${currentPage}&limit=10`,{withCredentials: true})
         .then(res => {
           console.log(res.data)
           setSurveys(res.data.surveys); // Update surveys state with the 'surveys' array from the response
