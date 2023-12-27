@@ -1,4 +1,8 @@
 allow third party cookies in the browser before using  
+
+default admin credentials:
+email: Admin@admin.com
+pass: admin
    
 FrontEnd  
 https://iridescent-khapse-0bddb9.netlify.app/  
