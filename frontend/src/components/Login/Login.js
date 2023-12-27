@@ -27,6 +27,7 @@ const Login = ({isLoggedIn, setIsLoggedIn}) => {
     e.preventDefault();
     try {
         const serverUrl = process.env.REACT_APP_SERVER_URL;
+        console.log(serverUrl);
         const response = await axios.post(`${serverUrl}/api/admin/login`, {
           email: email,
           password: password

@@ -11,12 +11,12 @@ dotenv.config();
 connectDB();
 const app = express();
 console.log(process.env.FRONTEND_URL);
-const allowedOrigin = process.env.FRONTEND_URL || "http://localhost:3000"; // Assuming FRONTEND_URL is the environment variable in your .env file
 
 app.use(cors({
-  origin: allowedOrigin,
-  credentials: true
-}));
+    origin: [process.env.FRONTEND_URL, "http://localhost:3002", "https://iridescent-khapse-0bddb9.netlify.app"],
+    credentials: true
+  }));
+  
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
