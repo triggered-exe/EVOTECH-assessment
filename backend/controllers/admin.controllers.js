@@ -40,7 +40,11 @@ export const adminLogin = async (req, res) => {
       const token = jwt.sign({ adminId: admin._id }, process.env.JWT_SECRET);
   
       // Set the JWT as a cookie in the response
-      res.cookie('token', token, { expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000)});
+      res.cookie('token', token, { 
+        expires: new Date(Date.now() + 30 * 24 * 60 * 60 * 1000),
+        sameSite: 'None',
+        domain: 'iridescent-khapse-0bddb9.netlify.app'
+      });
   
       res.status(200).json({ message: "Login successful" });
     } catch (error) {
