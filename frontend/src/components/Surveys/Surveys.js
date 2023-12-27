@@ -9,7 +9,7 @@ const Surveys = () => {
     const [currentPage, setCurrentPage] = useState(1);
     const [showDetails, setShowDetails] = useState(false);
     const [selectedSurvey, setSelectedSurvey] = useState(null);
-
+    console.log(process.env.REACT_APP_SERVER_URL);
     const getSurveys = () => {
        const serverUrl = process.env.REACT_APP_SERVER_URL;
         axios.get(`${serverUrl}/api/surveys?page=${currentPage}&limit=10`,{withCredentials: true})

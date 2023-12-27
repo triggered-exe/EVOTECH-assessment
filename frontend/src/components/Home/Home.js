@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styles from './Home.module.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,7 +10,7 @@ const Home = ({isLoggedIn}) => {
       {
         isLoggedIn ? (
           <>
-          <div className={styles.box} onClick={() => navigate('/submissions')}>
+          <div className={styles.box} onClick={() => navigate('/Survey')}>
                 View All Surveys
             </div>
           </>

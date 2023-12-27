@@ -25,6 +25,7 @@ const Login = ({isLoggedIn, setIsLoggedIn}) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log(process.env.REACT_APP_SERVER_URL);
     try {
         const serverUrl = process.env.REACT_APP_SERVER_URL;
         console.log(serverUrl);
