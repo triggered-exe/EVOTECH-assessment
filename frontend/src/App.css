@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background: #787af6;
+  background: -webkit-linear-gradient(3deg, #787af6 0%, #bb7cdf 100%);
+  background: linear-gradient(3deg, #787af6 0%, #bb7cdf 100%);
+  width: 100vw;
+  min-height: 100vh;
+}

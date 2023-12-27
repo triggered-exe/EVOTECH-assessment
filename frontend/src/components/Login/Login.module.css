@@ -1,0 +1,48 @@
+/* Login.module.css */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    gap: 50px;
+    margin-top: 50px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    gap: 20px;
+  }
+  
+  .formGroup {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .input {
+    padding: 8px;
+    width: 80%;
+    margin-left: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  

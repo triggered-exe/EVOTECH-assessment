@@ -1,0 +1,41 @@
+.layoutContainer {
+    width: 100%;
+    height: 3rem;
+    background-color: #5200FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.layoutContainer span {
+    font-size: 1.8rem;
+    background: linear-gradient( rgb(218, 128, 10), rgba(255, 255, 255, 0.979));
+    background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.layoutContainer button {
+    position: absolute;
+    right: 15px;
+    /* Add more styling properties as needed */
+    /* For example, add background color, padding, etc. */
+    background-color: #3498db;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.3s; /* Adding a transition for a smooth effect */
+  }
+
+  .layoutContainer button:hover {
+   background-color: #ff0000;
+    
+  }
+  
+  .layoutContainer button:active {
+    transform: scale(0.95); /* Reducing the button size when clicked */
+  }
+  

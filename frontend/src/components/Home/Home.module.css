@@ -1,0 +1,29 @@
+.homeContainer {
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 3rem);
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.box {
+    width: 20%;
+    min-width: 300px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: border-radius 0.5s ease, background 0.5s ease;
+    cursor: pointer;
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(11px);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.box:hover {
+    border-radius: 25px;
+    background: rgba(9, 9, 194, 0.767);
+    color: white;
+}
