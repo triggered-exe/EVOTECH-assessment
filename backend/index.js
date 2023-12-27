@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8000;
 dotenv.config();
 connectDB();
 const app = express();
-
+console.log(process.env.FRONTEND_URL);
 const allowedOrigin = process.env.FRONTEND_URL || "http://localhost:3000"; // Assuming FRONTEND_URL is the environment variable in your .env file
 
 app.use(cors({
